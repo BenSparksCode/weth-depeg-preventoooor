@@ -31,10 +31,6 @@ contract WethDepegPreventooor is Ownable {
         require(sent, "AHHHH FKN RUGGED AGAIN :(");
     }
 
-    /*//////////////////////////////////////////////////////////////
-                            OWNER FUNCTIONS
-    //////////////////////////////////////////////////////////////*/
-
     function setExchangeRate(uint256 newExchangeRate) public onlyOwner {
         require(newExchangeRate <= SCALE, "More than 1:1? In this economy?!");
 
